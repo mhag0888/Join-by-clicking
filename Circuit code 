@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Group Portfolio</title>
+  <style>
+    body {
+      background-color: #ccccff;
+    }
+    input {
+      background-color: #cc0075;
+      color: white;
+    }
+    textarea {
+      background-color: #cc0075;
+    }
+    marquee {
+      color: blue;
+    }
+    h1, h2 {
+      color: blue;
+    }
+    textarea,input {
+      font-size: 20px;
+      color: blue
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>
+      <ul>
+        <li><a href="ai.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tel:09014123036">Contact</a></li>
+      </ul>
+      </h1>
+    </nav>
+  </header>
+  <section>
+    <form action="https://chat.whatsapp.com/LeN9gFuvIJHHbahH9vcNau?mode=ac_t" onsubmit="return validatePassword()">
+      <input type="text" placeholder="Name" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="Message" required></textarea><br><br>
+      <input type="password" id="password" placeholder="Input sign in password" required><br><br>
+      <input type="password" id="confirmPassword" placeholder="Confirm password" required><br><br>
+       <button type="submit">Enter to Join Group</button>
+    </form>
+  </section>
+  <section id="home">
+    <marquee behavior="alternate" direction="up" scrollamount="5" loop="5"><h1>Welcome to our portfolio!</h1></marquee>
+    <h1>We're circuit coders, we are the developer, the future ELON.</h1>
+    <h1>Click on the Enter button to enter the platform</h1>
+     </section>
+  <section id="contact">
+    <h1>Get in Touch</h1>
+  </section>
+  <script>
+    function validatePassword() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+      } else {
+        alert("Logged in successfully");
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>
